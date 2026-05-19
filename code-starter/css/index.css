@@ -1,0 +1,152 @@
+/* CSS-Variablen für Responsive Schriften */
+:root {
+  /* Desktop */
+
+}
+
+body {
+  
+}
+
+h1 {
+  
+}
+
+h2 {
+  
+}
+
+h3 {
+  
+}
+
+p {
+  
+}
+
+@media (max-width: 768px) {
+  :root {
+    /* Tablet */
+
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    /* Mobile */
+
+  }
+}
+
+/* CSS-Variablen für ein 8px-Grid */
+:root {
+}
+
+.spaced-container {
+  background-color: #eaeded;
+  border-radius: 8px;
+}
+
+/* CSS Transitions */
+.button {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+
+  transition: all 0.3s ease;
+
+  transform: background-color 0.3s ease, 
+  transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #341f97;
+  transform: scale(1.1);
+}
+.button:active {
+  background-color: #97551f;
+  transform: scale(0.95);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(92, 231, 131, 0.5);
+}
+/* CSS Animations */
+
+@keyframes box {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(0, 200px);
+  }
+
+  50% {
+    transform: translate(200px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animated-box {
+ 
+  animation: box 800ms infinite;
+  width: 120px;
+  height: 120px;
+  background-color: #fab1a0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+  animation: box 500ms;
+}
+
+.animations {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px ;
+  }
+  
+
+/* CSS Motion Path - in Figma zeichen und als Pfad exportieren */
+
+@keyframes path {
+  0% {
+    offset-distance: 0%;
+  }
+
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+.motion-element {
+  width: 100px;
+  height: 100px;
+  background-color: #74b9ff;
+  border-radius: 50%;
+  animation: path 5s linear infinite;
+  animation-name: path;
+  offset-path: path('M193.486 6.02133C193.486 6.02133 343.486 -36.9787 378.486 117.021C413.486 271.021 184.486 248.021 184.486 248.021C184.486 248.021 43.4858 239.021 0.485718 63.0213');
+}
+
+.motion-path {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+}
+
+/* Lottie-Animationen *
+
