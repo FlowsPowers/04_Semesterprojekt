@@ -3,23 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocktail API</title>
+    <title>Dragon Ball Finder</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Vorlage für interaktive Medien 2</h1>
-
+        
+        <div id="headerBgContainer"><div id="headerBg"></div></div>
+        <div id="headerBgRight"></div>
+             <!--<h1></h1>-->
+        <div id="titleHolder">
+                <div id="titleBack" class="titleAnimation"></div>
+                <div id="titleFront" class="titleAnimation"></div>
+        </div>
+        <div id="buttonMute">
+             <div id="buttonStates"></div>
+        </div>
+        <div id="menuHolder">
+            <div id="menuContainer"></div>
+        </div>
+        </div>
     </header>
     <main>
-        <h2>Main Content</h2>
-        <p>This is the main content of the page.</p>
-
+    <div id="mainWrapper"><div id="mainContentScroller"></div></div>
     </main>
     <footer>
-        <p>This is the footer of the page.</p>
-
+        <p>Dragon Ball Finder</p>
     </footer>
-    <script src="js/script.js" type="module"></script> 
+    <!-- TweenJS (CreateJS) - provides createjs.Tween and Ticker -->
+    <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
+    <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
+    <script src="js/script.js" type="module"></script>
 </body>
 </html>
